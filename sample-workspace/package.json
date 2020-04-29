@@ -9,7 +9,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "storybook:run": "start-storybook",
-    "storybook:build": "build-storybook -c .storybook -o .out"
+    "storybook:build": "build-storybook -c .storybook -o .out",
+    "build:elements": "ng build --prod --project custom-element --output-hashing none && npm run pack:elements && copy /b projects\\custom-element\\package.json dist\\custom-element\\package.json",
+    "pack:elements": "type .\\dist\\custom-element\\*-es5.js > dist\\custom-element\\custom-element.js"
   },
   "private": true,
   "dependencies": {
@@ -18,11 +20,13 @@
     "@angular/common": "~9.1.3",
     "@angular/compiler": "~9.1.3",
     "@angular/core": "~9.1.3",
+    "@angular/elements": "^9.1.3",
     "@angular/forms": "~9.1.3",
     "@angular/material": "^9.2.1",
     "@angular/platform-browser": "~9.1.3",
     "@angular/platform-browser-dynamic": "~9.1.3",
     "@angular/router": "~9.1.3",
+    "document-register-element": "^1.7.2",
     "material-icons": "^0.3.1",
     "roboto-fontface": "^0.10.0",
     "rxjs": "~6.5.4",

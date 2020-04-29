@@ -1,0 +1,11 @@
+{
+  "name": "custom-element",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "files": [ "custom-element.js", "styles.scss" ]
+}
