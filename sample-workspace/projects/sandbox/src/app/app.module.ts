@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { SampleComponentLibModule } from 'sample-component-lib';
+// import { SampleComponentLibModule } from '../../../sample-component-lib/src/lib/sample-component-lib.module';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
