@@ -8,6 +8,8 @@ import { Sub1Component } from './components/router-page/sub1/sub1.component';
 import { Sub2Component } from './components/router-page/sub2/sub2.component';
 import { BlankComponent } from './components/router-page/blank/blank.component';
 import { CustomLibRoutingModule } from './custom-lib-routing.module';
+import { LibStateService } from './services/lib-state.service';
+import { LibSettingsComponent } from './components/lib-settings/lib-settings.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { CustomLibRoutingModule } from './custom-lib-routing.module';
     RouterPageComponent,
     Sub1Component,
     Sub2Component,
-    BlankComponent
+    BlankComponent,
+    LibSettingsComponent
   ],
   imports: [
     MaterialModule,
@@ -26,7 +29,11 @@ import { CustomLibRoutingModule } from './custom-lib-routing.module';
   exports: [
     CustomButtonComponent,
     SampleFormGroupComponent,
-    RouterPageComponent
+    RouterPageComponent,
+    LibSettingsComponent
+  ],
+  providers: [
+    LibStateService
   ]
 })
 export class SampleComponentLibModule { }

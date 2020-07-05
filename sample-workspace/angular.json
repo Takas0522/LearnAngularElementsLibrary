@@ -192,7 +192,9 @@
             "styles": [
               "projects/custom-element/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "projects/custom-element/src/static-scripts/lib-settings.js"
+            ]
           },
           "configurations": {
             "production": {
